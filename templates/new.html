@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <title>Twitter Map</title>
+    <style>
+      h1 {
+        font-size: 36px;
+        font-family: "Monaco", "Courier", monospace;
+        color: #618ad2;
+        text-align: center;
+      }
+      form {
+        font-size: 22px;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <h1>Twitter friends' locations</h1>
+
+<form method = "POST" action ="{{url_for('user')}}">
+    twitter account: <input type="text" name="username"><br>
+
+    <input class = "btn btn-primary" type="submit" value="Submit">
+</form>
+
+</body>
+</html>
